@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips/review_list.dart';
 import 'description_place.dart';
 //import 'review.dart';
 
@@ -21,8 +22,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Platzi Trips'),
         ),
-        body: new DescriptionPlace('Santa Marta', 4, dummyText),
-        //body: Review('assets/img/review_photo.jpg', 'Yennifer Herrera', 5, 3, 4, 'Este lugar es increíble. No hay manera de no amarlo'),
+        //body: new DescriptionPlace('Santa Marta', 4, dummyText),
+        body: ReviewList(),
       )
     );
   }

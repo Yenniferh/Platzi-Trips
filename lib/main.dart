@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips/review_list.dart';
 import 'description_place.dart';
+import 'gradient_back.dart';
 //import 'review.dart';
 
 void main() => runApp(MyApp());
@@ -19,11 +20,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Platzi Trips'),
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace('Santa Marta', 4, dummyText),
+                ReviewList()
+              ],
+            ),
+            GradientBack(),
+          ],
         ),
-        //body: new DescriptionPlace('Santa Marta', 4, dummyText),
-        body: ReviewList(),
       )
     );
   }

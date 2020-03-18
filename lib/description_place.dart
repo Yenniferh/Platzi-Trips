@@ -83,11 +83,14 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    return Column(
-      children: <Widget>[
-        title_stars,
-        description_text
-      ],
+    return Container(
+      margin: EdgeInsets.only(bottom: 15.0),
+      child: Column(
+        children: <Widget>[
+          title_stars,
+          description_text
+        ],
+      ),
     );
   }
 

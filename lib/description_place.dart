@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   // ignore: non_constant_identifier_names
@@ -86,9 +87,11 @@ class DescriptionPlace extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 15.0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           title_stars,
-          description_text
+          description_text,
+          ButtonPurple("Navigate")
         ],
       ),
     );

@@ -3,11 +3,12 @@ import 'package:platzi_trips/description_place.dart';
 import 'package:platzi_trips/header_appbar.dart';
 import 'package:platzi_trips/review_list.dart';
 
-class HomeTrips extends StatelessWidget{
-
+class HomeTrips extends StatelessWidget {
   // This widget is the root of your application.
-  String dummyText = 'Intelligentsia hammock before they sold out, distillery in velit trust fund blue bottle salvia et meditation. '
-      'Sriracha typewriter culpa glossier, franzen laboris readymade slow-carb minim. Pabst artisan helvetica bushwick. ';
+  String dummyText =
+      'Playa brisa y mar en un mismo lugar, Santa Marta. Una ciudad que cautiva. '
+      'Posee una amplia variedad de actividades para todos los gustos. Descubre sus playas, '
+      'la Sierra Nevada, la arquitectura colonial y mucho más. ¿Qué esperas para venir?';
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,9 @@ class HomeTrips extends StatelessWidget{
       children: <Widget>[
         ListView(
           children: <Widget>[
+            SizedBox(
+              height: 20.0,
+            ),
             DescriptionPlace('Santa Marta', 4, dummyText),
             ReviewList()
           ],
